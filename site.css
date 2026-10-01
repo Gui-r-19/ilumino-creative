@@ -21,3 +21,12 @@ html[data-motion=paused] *{animation-play-state:paused!important}
 
 .client-card{aspect-ratio:4/3;border:1px solid #ffffff20;border-radius:12px;padding:30px;background:radial-gradient(ellipse at 100% 0,#f4eb3511,transparent 70%),#171916;display:flex;flex-direction:column;justify-content:space-between}.client-monogram{font-family:Georgia,serif;color:var(--yellow);font-size:44px;line-height:1}.client-card strong{font-size:23px;font-weight:500;letter-spacing:-.6px;max-width:220px}
 
+/* Faixa compacta de clientes, sem cartões de projetos. */
+.brand-strip{padding:25px 0 28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.brand-strip .eyebrow{font-size:8px;color:var(--muted);margin-bottom:23px}
+.brand-strip .project-carousel{width:100%;margin:0;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.brand-strip .project-group{gap:0;padding-right:0;animation-duration:38s;min-width:100%;justify-content:space-around}
+.brand-item{display:flex;align-items:center;gap:15px;padding:0 34px;white-space:nowrap;font-size:14px;color:#e6e8df;min-height:38px}
+.brand-initial{font-family:Georgia,serif;font-size:23px;letter-spacing:-2px;width:29px;text-align:center;color:#c5c9bc}
+.brand-item img{width:160px;height:36px;object-fit:contain}
+@media(max-width:700px){.brand-strip{padding:22px 0}.brand-strip .eyebrow{font-size:7px;letter-spacing:1.4px}.brand-item{font-size:13px;padding:0 24px;gap:12px}.brand-initial{font-size:21px}}
