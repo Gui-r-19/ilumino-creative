@@ -15,3 +15,19 @@
 .partner-sbt .partner-logo{width:54px;height:54px;background-size:contain;background-position:center;filter:none}
 .partner-neymar .partner-logo{width:29px;height:59px;background-size:contain;background-position:center}
 @media(max-width:600px){.brand-group{gap:35px;padding-right:35px}.brand-item{min-width:120px}.official-symbol{width:34px;height:34px;background-size:53px 53px}}
+
+/* Entradas e iluminação progressivas, sem bloquear a leitura. */
+.section-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.section-reveal.is-visible{opacity:1;transform:translateY(0)}
+.front-grid article{transition:border-color .3s,box-shadow .3s,transform .3s,opacity .7s;background-image:radial-gradient(ellipse at top left,#f7ed2508,transparent 70%)}
+@media(hover:hover){.front-grid article:hover{border-color:#f7ed2560;box-shadow:0 0 28px #f7ed2510;transform:translateY(-4px)}.front-grid article:hover svg{filter:drop-shadow(0 0 7px #f7ed2580)}}
+.promise,.closing{position:relative;isolation:isolate;overflow:hidden}
+.promise:after,.closing:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 35% 65%,#f7ed2512,transparent 48%);animation:section-light 9s ease-in-out infinite alternate}
+.timeline.is-active .step-dot{animation:process-pulse 3.6s ease-in-out infinite;animation-delay:var(--pulse-delay,0s)}
+.closing-action .button{animation:invitation-glow 5s ease-in-out infinite}
+@keyframes section-light{from{transform:translateX(-12%);opacity:.45}to{transform:translateX(12%);opacity:1}}
+@keyframes process-pulse{0%,60%,100%{box-shadow:0 0 0 transparent}20%{box-shadow:0 0 13px #f7ed2590;background:var(--yellow)}}
+@keyframes invitation-glow{0%,100%{box-shadow:0 0 0 transparent}50%{box-shadow:0 0 26px #f7ed2525}}
+html[data-motion='paused'] .section-reveal{opacity:1;transform:none;transition:none}
+html[data-motion='paused'] *,html[data-motion='paused'] *:before,html[data-motion='paused'] *:after{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.section-reveal{opacity:1;transform:none;transition:none}}
