@@ -1,11 +1,9 @@
-# Ilumino — versão simplificada
+# Ilumino — direção baseada no mockup
 
-Nova estrutura: abertura → projetos reais → quem somos → três serviços → processo breve → conversa.
+Ordem das seções: abertura, faixa de clientes, promessa, processo em seis etapas, cinco frentes, cartões de marcas, briefing de 1 minuto, FAQ e fechamento.
 
-Abra index.html. Edite site-content.js para cadastrar a logo oficial, logos dos clientes, imagens e nomes dos projetos, Instagram e WhatsApp. Os cartões aparecem automaticamente quando preenchidos.
+Os seis clientes foram confirmados pelo usuário. Os nomes e iniciais são apresentações tipográficas provisórias; as artes dos cartões não são reproduções dos trabalhos entregues. A composição Bella Clínica na abertura é um estudo visual, identificado na página. Substitua pelas imagens originais quando disponíveis.
 
-O símbolo iL é uma interpretação provisória do mockup, não a logo oficial. A composição na abertura é uma demonstração da linguagem do estúdio. Não representa um trabalho de cliente. O portfólio aguarda os arquivos reais; a indicação de espaço reservado é apenas para revisão desta versão.
+A logo iL é provisória. Não foram incluídos os números +100, +60, +8 anos, 96% ou promessa de resposta em 24 horas porque não foram confirmados. WhatsApp vazio: CTAs levam ao briefing; o resumo pode ser copiado. Configure o número em site-content.js para ativar o WhatsApp.
 
-Foram removidos os botões Conheça a proposta, as abas demonstrativas e o FAQ. O briefing de 1 minuto foi mantido. Enquanto o WhatsApp não está configurado, os CTAs levam ao briefing, com resumo para copiar. O carrossel contínuo recebe todos os projetos cadastrados.
-
-Esta revisão ainda não substitui a versão publicada: faltam os projetos e logos reais prometidos para que a seção de prova comercial fique completa.
+Edite mockup.css para acabamento, mockup.js para processo/frentes/FAQ, site-content.js para clientes/logo/contato e content.js para opções do briefing.
