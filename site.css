@@ -18,3 +18,6 @@ html[data-motion=paused] *{animation-play-state:paused!important}
 
 .hero{overflow:clip}
 
+
+.client-card{aspect-ratio:4/3;border:1px solid #ffffff20;border-radius:12px;padding:30px;background:radial-gradient(ellipse at 100% 0,#f4eb3511,transparent 70%),#171916;display:flex;flex-direction:column;justify-content:space-between}.client-monogram{font-family:Georgia,serif;color:var(--yellow);font-size:44px;line-height:1}.client-card strong{font-size:23px;font-weight:500;letter-spacing:-.6px;max-width:220px}
+
