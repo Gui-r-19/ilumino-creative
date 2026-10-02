@@ -31,3 +31,47 @@
 html[data-motion='paused'] .section-reveal{opacity:1;transform:none;transition:none}
 html[data-motion='paused'] *,html[data-motion='paused'] *:before,html[data-motion='paused'] *:after{animation-play-state:paused!important}
 @media(prefers-reduced-motion:reduce){.section-reveal{opacity:1;transform:none;transition:none}}
+
+/* Layout amplo: leitura confortável e grades que acompanham a tela. */
+.hero-copy,.hero-art,.row-title,.timeline,.front-grid,.faq-grid,.promise-copy,.promise-points{min-width:0}
+@media(min-width:601px){
+ .site-shell{width:calc(100% - 48px);max-width:1440px}
+ header{padding:24px 5%;gap:20px}nav{font-size:13px;gap:22px}.instagram{font-size:12px}
+ .button,.outline-button{font-size:13px;min-height:48px;padding:14px 20px}
+ .eyebrow{font-size:10px;letter-spacing:1.8px}
+ .hero{padding:60px 5% 24px;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:center}
+ .hero h1{font-size:clamp(42px,4.1vw,62px);letter-spacing:-2px}
+ .hero-copy>p:not(.eyebrow){font-size:16px;line-height:1.65;max-width:480px}
+ .hero-facts strong{font-size:14px}.hero-facts span{font-size:11px}.hero-art{height:440px;min-height:440px}
+ .laptop{top:35px;height:330px}.phone{bottom:30px}.identity-card{bottom:35px}
+ .brands{padding:26px 0}.brands>.eyebrow{font-size:10px;margin-left:5%;margin-right:5%}
+ .promise{padding:48px 5%;min-height:320px;grid-template-columns:minmax(0,1fr) minmax(0,.7fr) minmax(0,1fr);gap:24px}
+ .promise-copy h2{font-size:34px}.promise-copy>p:not(.eyebrow){font-size:14px;line-height:1.65}
+ .promise-points h3{font-size:14px}.promise-points p{font-size:12px;line-height:1.6}.promise-points article{gap:15px;padding:18px 0}
+ .row-section{padding:48px 5%;grid-template-columns:minmax(210px,.28fr) minmax(0,1fr);gap:36px}
+ .row-title h2{font-size:30px;line-height:1.15}.row-title>p:not(.eyebrow){font-size:14px;line-height:1.65;max-width:260px}
+ .timeline{gap:20px}.timeline h3{font-size:14px}.timeline p{font-size:12px;line-height:1.6}.step-number{font-size:13px}
+ .front-grid{gap:14px}.front-grid article{padding:22px 16px;min-height:190px}.front-grid h3{font-size:14px}.front-grid p{font-size:12px;line-height:1.6}
+ legend{font-size:14px}.choices{gap:12px}.choice>span{padding:17px}.choice strong{font-size:14px}.choice small{font-size:12px;line-height:1.6}
+ .brief-result h3{font-size:20px}.brief-result p{font-size:13px}.delivery-note,.small{font-size:12px}
+ .faq-grid{gap:12px}.faq-grid details{padding:17px}.faq-grid summary{font-size:14px}.faq-grid p{font-size:13px;line-height:1.65}
+ .closing{padding:65px 8%;gap:40px}.closing h2{font-size:40px}.closing>div>p:not(.eyebrow){font-size:15px;line-height:1.65}.closing-action p{font-size:12px}
+ footer{padding:26px 5%}footer>a:not(.brand),footer>span,footer>button{font-size:12px}
+}
+@media(min-width:601px) and (max-width:1200px){
+ .row-section{grid-template-columns:1fr;gap:28px}.row-title h2 br{display:none}.row-title>p:not(.eyebrow){max-width:560px}
+ .timeline{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}.timeline:before{display:none}.timeline article{border-top:1px solid #cbbd3260}
+ .front-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.front-grid article{min-height:165px}
+ .hero{gap:22px}.hero h1{font-size:clamp(36px,4.5vw,48px)}.hero-actions{align-items:stretch}.hero-facts{grid-template-columns:1fr 1fr;gap:18px}
+ .promise{grid-template-columns:1fr 1fr;gap:40px}.promise-points{grid-column:2}.mountain-visual{opacity:.35}
+ nav{gap:14px;font-size:12px}.header-cta{display:none}
+}
+@media(min-width:601px) and (max-width:800px){
+ .hero{grid-template-columns:1fr}.hero-copy{max-width:580px}.hero-art{width:100%;max-width:580px;margin:auto}
+ .hero h1{font-size:52px}.hero-facts{grid-template-columns:repeat(4,1fr)}
+ .front-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.promise{gap:24px}.promise-copy h2{font-size:30px}
+ header{flex-wrap:wrap}nav{order:3;width:100%;justify-content:space-between;gap:10px}
+ .closing{padding:48px 5%;flex-wrap:wrap}.brief-extra{grid-template-columns:1fr 1fr}
+}
+@media(min-width:601px){.row-title h2 br{display:none}.row-title h2{max-width:300px;text-wrap:balance}.hero-copy h1,.promise-copy h2,.closing h2{text-wrap:balance}}
+
