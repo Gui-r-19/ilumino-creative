@@ -75,3 +75,21 @@ html[data-motion='paused'] *,html[data-motion='paused'] *:before,html[data-motio
 }
 @media(min-width:601px){.row-title h2 br{display:none}.row-title h2{max-width:300px;text-wrap:balance}.hero-copy h1,.promise-copy h2,.closing h2{text-wrap:balance}}
 
+/* Composição da abertura: reserva espaço para texto e legenda. */
+.phone{display:flex;flex-direction:column;gap:12px;overflow:hidden}
+.phone>span{flex-shrink:0}
+.phone p{margin-top:0;flex:1;min-height:0;font-size:clamp(16px,1.35vw,20px);line-height:1.12;letter-spacing:-.3px}
+.phone .phone-footer{position:static;font-size:5px;line-height:1.4;flex-shrink:0}
+@media(min-width:1201px){
+ .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);padding-top:48px;padding-bottom:32px;gap:48px}
+ .hero h1{font-size:clamp(46px,3.6vw,56px);line-height:1.08;letter-spacing:-2px;text-wrap:initial}
+ .hero-art{height:440px;min-height:440px}
+ .laptop{width:84%;right:4%;top:28px;height:330px}
+ .phone{width:125px;height:240px;bottom:36px;padding:20px 12px;gap:20px}
+ .phone p{font-size:20px;line-height:1.14}
+ .identity-card{bottom:40px;height:205px}
+ .art-caption{bottom:10px;line-height:1.5}
+}
+@media(max-width:600px){.phone{gap:10px;padding:15px 9px}.phone p{font-size:17px;line-height:1.08}.phone .phone-footer{font-size:4px}}
+@media(max-width:350px){.phone p{font-size:15px}}
+
